@@ -213,7 +213,7 @@ function tapActions(e) {
     elPoints.innerHTML = points;
   }
 
-  if (e.target.className === 'bribe') {
+  if (e.target.classList.contains('bribe')) {
     var tempPoints = points;
 
     if (points > 0) {

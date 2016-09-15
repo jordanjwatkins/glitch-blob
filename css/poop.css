@@ -4,7 +4,6 @@
     z-index: 2;
     cursor: pointer;
     border-radius: 100%;
-
 }
 
 .poop.silver {
@@ -19,7 +18,8 @@
 
 .poop.raw-anti-glitch {
     background-color: #555;
-    height: 15px;
+    width: 20px;
+    height: 20px;
 }
 
 .poop.raw-anti-glitch:after {
@@ -30,8 +30,8 @@
 .poop.pure-anti-glitch {
     background-color: #fff;
     z-index: 1001;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
 .poop.pure-anti-glitch:before,
@@ -49,11 +49,9 @@
     transform: skew(-50deg, -50deg);
 }
 
-
-
 .poop:before {
-    width: 205%;
-    height: 205%;
+    width: 505%;
+    height: 505%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);

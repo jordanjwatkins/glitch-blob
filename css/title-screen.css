@@ -21,26 +21,29 @@
 .title-text {
     position: absolute;
     width: 100%;
-    top: 50%;
-    transform: translateY(-60%);
+    height:  100%;
     text-align: center;
     z-index: 2;
 }
 
 .title-text > div {
-    display: inline-block;
-    font-size: 36px;
-    font-size: 10vw;
-    padding: 10px;
-    transform: translateY(0);
+    top: 50%;
+    transform: translateY(-60%);
 }
 
-.title-text > div:before {
+.title-text > div > div {
+    display: inline-block;
+    font-size: 36px; /* fallback */
+    font-size: 10vw;
+    padding: 10px;
+}
+
+.title-text > div > div:before {
     position: relative;
     opacity: 0;
 }
 
-.title-text.play > div:before {
+.title-text.play > div > div:before {
     transition: 1s linear;
     opacity: 1;
 }
@@ -77,8 +80,8 @@
     width: 100%;
     font-size: 4vw;
     opacity: 0;
-    top: 30px;
     cursor: pointer;
+    padding: 30px;
 }
 
 

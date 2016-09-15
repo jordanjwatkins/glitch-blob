@@ -23,13 +23,13 @@
     border: 8px solid transparent;
     border-width: 3px 8px;
     vertical-align: middle;
-    cursor: pointer;
 }
 
 .add-blob,
 .bribe {
     width: calc(100% / 7);
     height: 60px;
+    cursor: pointer;
 }
 
 .add-blob:before,
